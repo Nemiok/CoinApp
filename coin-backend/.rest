@@ -1,0 +1,3 @@
+GET http://localhost:3000/currency-feed
+Content-Type: 'application/json
+Authorization: 'Basic ZGV2ZWxvcGVyOnNraWxsYm94'
