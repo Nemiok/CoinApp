@@ -11,6 +11,9 @@ Frontend-разработка банковской системы для хра�
 
 Технологии: React, Redux-toolkit, JS, Webpack, styled-components 
 
+Для реализации UI использован подход Atomic Design
+
+
 TO START PROJECT:
 1. cd coin-backend
 2. npm install
