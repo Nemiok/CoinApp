@@ -9,7 +9,7 @@ Frontend-разработка банковской системы для хра�
 4) Возможность производить валютные обмены
 5) Тёмная тема
 
-Технологии: React, Redux-toolit, JS, Webpack, styled-components 
+Технологии: React, Redux-toolkit, JS, Webpack, styled-components 
 
 TO START PROJECT:
 1. cd coin-backend
