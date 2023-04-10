@@ -32,7 +32,7 @@ const Div = styled.div`
   cursor: ${({ cursor }) => cursor || ''};
   letter-spacing: ${({ letterSpacing }) => letterSpacing || ''};
 
-  background-color: ${({ theme, backgroundColor, formBackgroundColor, type, mainBackgroundColor, minorBackgroundColor, currenciesChangeBackgroundColor }) => type === 'error' && `rgba(${theme.errorColorRGB}, 0.1)`
+  background-color: ${({ theme, backgroundColor, formBackgroundColor, type, mainBackgroundColor, minorBackgroundColor, currenciesChangeBackgroundColor }) => type === 'error' && `#FFCDD2`
     || type === 'success' && `rgba(${theme.successColorRGB}, 0.1)`
     || formBackgroundColor && theme.formBackgroundColor
     || mainBackgroundColor && theme.mainBackgroundColor

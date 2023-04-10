@@ -1,22 +1,29 @@
-const validateLogin = (login) => {
+export const errorsReturnTextLogVal = {
+  SHORT_LOGIN: 'Логин должен иметь хотя-бы 6 символов',
+  NO_LOGIN_SPACES: 'Логин должен быть без пробелов',
+  SHORT_PASSWORD: 'Пароль должен иметь хотя-бы 6 символов',
+  NO_PASSWORD_SPACES: 'Пароль должен быть без пробелов'
+}
+
+export const validateLogin = (login) => {
   if (login.length < 6) {
-    return 'Логин должен иметь хотя-бы 6 символов'
+    return errorsReturnTextLogVal.SHORT_LOGIN
   }
 
   if (login.includes(' ')) {
-    return 'Логин должен быть без пробелов'
+    return errorsReturnTextLogVal.NO_LOGIN_SPACES
   }
 
   return true
 }
 
-const validatePassword = (password) => {
+export const validatePassword = (password) => {
   if (password.length < 6) {
-    return 'Пароль должен иметь хотя-бы 6 символов'
+    return errorsReturnTextLogVal.SHORT_PASSWORD
   }
 
   if (password.includes(' ')) {
-    return 'Пароль должен быть без пробелов'
+    return errorsReturnTextLogVal.NO_PASSWORD_SPACES
   }
 
   return true

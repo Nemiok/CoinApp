@@ -9,7 +9,7 @@ import accountServices from '../../../services/accountServices'
 import { useDispatch, useSelector } from 'react-redux'
 import { setNotificationAction } from '../../../reducers/notificationReducer'
 import { validate } from '../../../utils/transferValidate'
-import { getCurrentUserAction } from '../../../reducers/currentAccountReducer'
+import { getCurrentAccountAction } from '../../../reducers/currentAccountReducer'
 import { countLastNMonths } from '../../../utils/countBalanceDynamics'
 
 const TransferForm = () => {
@@ -51,7 +51,7 @@ const TransferForm = () => {
 
       setTransferAccount('')
       setTransferAmount('')
-      dispatch(getCurrentUserAction(transactionAccount.account))
+      dispatch(getCurrentAccountAction(transactionAccount.account))
       dispatch(setNotificationAction({ type: 'success', message: 'Транзакция успешна' }, 5000))
       currentAccount && currentAccount.transactions && countLastNMonths(currentAccount.transactions, currentAccount.balance, -6)
     } catch (exception) {

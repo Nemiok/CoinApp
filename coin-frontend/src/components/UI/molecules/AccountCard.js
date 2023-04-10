@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { useNavigate } from 'react-router-dom'
-import { getCurrentUserAction } from '../../../reducers/currentAccountReducer'
+import { getCurrentAccountAction } from '../../../reducers/currentAccountReducer'
 import processDate from '../../../utils/processDate'
 import Button from '../atoms/Button'
 import Div from '../atoms/Div'
@@ -16,8 +16,7 @@ const AccountCard = (props) => {
   const navigate = useNavigate()
 
   const handleOpenCard = (id) => {
-    dispatch(getCurrentUserAction(id))
-
+    dispatch(getCurrentAccountAction(id))
     navigate(id)
   }
 
