@@ -5,7 +5,7 @@ Frontend-разработка банковской системы для хра�
 осуществления финансовых операций (Single Page Application)
 
 # **Сайт**
-Деплой: `https://coin-app-production.up.railway.app/`
+Деплой: https://coin-app-production.up.railway.app/
 Логин: `skillbox`
 Пароль: `developer`
 
